@@ -7,7 +7,7 @@ In the terminal, start the installation with:
 
 In case of problems, you can consult the log file quanTLC-install.txt.
 
-Then, run this command to launch the application
+Then in R, run this command to launch the application
 ```r
 quanTLC::run.quanTLC()
 ```
