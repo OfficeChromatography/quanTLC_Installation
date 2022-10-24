@@ -2,7 +2,7 @@
 
 Download the code as zip and copy the installation script to your raspberry pi.
 
-In the terminal, start the installation with:
+In the terminal, change to the directory of the installation script, and start the installation with:
 
 ```
 sudo bash quanTLC_install.sh |& tee quanTLC-install.txt
