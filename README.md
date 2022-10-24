@@ -1,4 +1,4 @@
-# quantTLC_Installation
+# quanTLC_Installation
 
 Download the code as zip and copy the installation script to your raspberry pi.
 
