@@ -20,10 +20,8 @@ then
   echo ""
   echo "Installing R packages"
   echo ""
-  yes | sudo su - -c "R -e \"install.packages('dplyr', repos='http://cran.rstudio.com/')\""
-  yes | sudo su - -c "R -e \"install.packages('devtools', repos='http://cran.rstudio.com/')\""
   yes | sudo su - -c "R -e \"library(devtools)\""
-  yes | sudo su - -c "R -e \"devtools::install_github('dimitrif/quanTLC')\""
+  yes | sudo su - -c "R -e \"devtools::install_github('https://github.com/OfficeChromatography/quanTLC.git')\""
   yes | sudo su - -c "R -e \"devtools::install_github('jrowen/rhandsontable')\""
   echo "Performing reboot"
   sudo reboot
