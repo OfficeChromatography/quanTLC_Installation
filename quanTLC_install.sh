@@ -18,11 +18,11 @@ then
   yes | sudo apt-get install libssl-dev libcurl4-openssl-dev r-cran-rgl libtiff5-dev 
   yes | sudo apt-get install libssh2-1-dev libxml2-dev libgit2-dev libnlopt-dev
   echo ""
-  echo "Installing R packages"
+  echo "Installing quanTLC"
   echo ""
-  yes | sudo su - -c "R -e \"library(devtools)\""
-  yes | sudo su - -c "R -e \"devtools::install_github('https://github.com/OfficeChromatography/quanTLC.git')\""
-  yes | sudo su - -c "R -e \"devtools::install_github('jrowen/rhandsontable')\""
+  yes | sudo su - -c "R -e \"install.packages('remotes')\""
+  yes | sudo su - -c "R -e \"library(remotes)\""
+  yes | sudo su - -c "R -e \"remotes::install_github('OfficeChromatography/quanTLC')\""
   echo "Performing reboot"
   sudo reboot
 else

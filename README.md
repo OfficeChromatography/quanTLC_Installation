@@ -8,16 +8,15 @@ In the terminal, change to the directory of the installation script, and start t
 sudo bash quanTLC_install.sh |& tee quanTLC-install.txt
 ```
 
-In case of problems, you can consult the log file quanTLC-install.txt.
+In case of problems (missing dependencies), you can consult the log file quanTLC-install.txt.
 
-Change to the quantTLC directory
-```
-cd /usr/local/lib/R/site-library/quanTLC/shinyapps/quanTLC
-```
-and start R
+Starting quanTLC:
+
+Start R:
 ```
 R
 ```
+
 Then in R, run this command to launch the application
 ```
 quanTLC::run.quanTLC()
