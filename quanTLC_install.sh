@@ -12,17 +12,18 @@ read userinput
 if [ "$userinput" == "y" ]
 then
   echo "Installing r-base"
-  yes | sudo apt-get install r-base
+  yes | sudo apt install r-base
   echo ""
   echo "Installing libraries"
-  yes | sudo apt-get install libssl-dev libcurl4-openssl-dev r-cran-rgl libtiff5-dev 
-  yes | sudo apt-get install libssh2-1-dev libxml2-dev libgit2-dev libnlopt-dev
+  yes | sudo apt install libssl-dev libcurl4-openssl-dev r-cran-rgl libtiff5-dev 
+  yes | sudo apt install libssh2-1-dev libxml2-dev libgit2-dev libnlopt-dev
   echo ""
   echo "Installing quanTLC"
   echo ""
   yes | sudo su - -c "R -e \"install.packages('remotes')\""
   yes | sudo su - -c "R -e \"library(remotes)\""
   yes | sudo su - -c "R -e \"remotes::install_github('OfficeChromatography/quanTLC')\""
+  yes | sudo su - -c "R -e \"tinytex::install_tinytex()\""
   echo "Performing reboot"
   sudo reboot
 else
