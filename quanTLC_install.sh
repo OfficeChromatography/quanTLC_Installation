@@ -20,10 +20,10 @@ then
   echo ""
   echo "Installing quanTLC"
   echo ""
-  yes | sudo su - -c "R -e \"install.packages('remotes')\""
   yes | sudo su - -c "R -e \"library(remotes)\""
-  yes | sudo su - -c "R -e \"remotes::install_github('OfficeChromatography/quanTLC')\""
+  yes | sudo su - -c "R -e \"remotes::install_github('OfficeChromatography/quanTLC', lib='/usr/lib/R/site-library/')\""
   yes | sudo su - -c "R -e \"tinytex::install_tinytex()\""
+  yes | sudo chmod 777 -R /usr/lib/R/site-library/quanTLC 
   echo "Performing reboot"
   sudo reboot
 else
