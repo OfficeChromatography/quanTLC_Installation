@@ -21,3 +21,4 @@ Then in R, run this command to launch the application
 ```
 quanTLC::run.quanTLC()
 ```
+Last tested May 2023: Raspberry Pi 4, Raspberry Pi OS 64 bit, Debian 11 (bullseye).
