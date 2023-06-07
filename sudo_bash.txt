@@ -1,0 +1,8 @@
+sudo bash quanTLC_install.sh |& tee quanTLC-install.txt
+
+sudo bash shiny-server.sh |& tee shiny-server-install.txt
+
+
+sudo su - -c "R -e \"tinytex::install_tinytex()\""
+
+sudo su - -c "R -e \"install.packages('pdflatex', lib='/usr/lib/R/site-library/')\""
