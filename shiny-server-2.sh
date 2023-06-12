@@ -25,6 +25,7 @@ then
   yes | sudo git clone https://github.com/OfficeChromatography/rTLC-apps.git
   yes | sudo cp -R rTLC-apps /srv/shiny-server/rTLC-apps
   yes | sudo mv /srv/shiny-server/rTLC-apps /srv/shiny-server/rTLC
+  yes | sudo chmod 777 -R srv/shiny-server/rTLC
   echo ""
   #echo "Performing reboot"
   #sudo reboot
