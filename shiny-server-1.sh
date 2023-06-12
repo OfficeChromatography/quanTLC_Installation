@@ -11,6 +11,8 @@ echo "Are you ready to start? (y/n)"
 read userinput
 if [ "$userinput" == "y" ]
 then
+  echo "Installing git"
+  yes | sudo apt install git
   echo "Installing r-base"
   yes | sudo apt install r-base r-base-dev     #--version=4.1.2??
   echo ""
