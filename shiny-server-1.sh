@@ -25,6 +25,7 @@ then
   echo ""
   echo "Installing R packages"
   echo ""
+  yes | sudo su - -c "R -e \"install.packages(c('chemometrics', 'klaR', 'evtree', 'threejs', 'shinyAce'))\""
   yes | sudo su - -c "R -e \"install.packages('devtools')\""
   yes | sudo su - -c "R -e \"install.packages('rJava',,'http://rforge.net', type='source')\""
   yes | sudo su - -c "R -e \"library(devtools)\""
