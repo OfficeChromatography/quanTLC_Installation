@@ -1,0 +1,4 @@
+sudo bash shiny-server-1.sh |& tee shiny-server-1-install.txt
+
+sudo bash shiny-server-2.sh |& tee shiny-server-2-install.txt
+
